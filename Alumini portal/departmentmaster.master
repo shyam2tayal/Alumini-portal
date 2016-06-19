@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/departmentmaster.master.cs"
+    Inherits="index1" MasterPageFile="~/index.master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet" href="styles/layout.css" type="text/css" />
+    <!-- Homepage Specific Elements -->
+    <script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.tabs.setup.js"></script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="wrapper row2">
+        <div class="rnd">
+            <!-- ###### -->
+            <div id="topnav">
+                <ul>
+                    <li class="active"><a href="cse.aspx">CSE</a></li>
+                    <li><a href="IT.aspx">IT</a></li>
+                    <li><a href="ECE.aspx">ECE</a></li>
+                    <li><a href="MAE.aspx">MAE</a></li>
+                    <li><a href="Appliedsceince.aspx">ELECTRICAL ENGINEERING</a></li>
+              
+                </ul>
+            </div>
+            <!-- ###### -->
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="bodyContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

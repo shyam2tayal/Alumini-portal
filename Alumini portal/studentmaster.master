@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="~/studentmaster.master.cs"
+    Inherits="index1" MasterPageFile="~/index.master" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <link rel="stylesheet" href="styles/layout.css" type="text/css" />
+    <!-- Homepage Specific Elements -->
+    <script type="text/javascript" src="scripts/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript" src="scripts/jquery.tabs.setup.js"></script>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div class="wrapper row2">
+        <div class="rnd">
+            <!-- ###### -->
+            <div id="topnav">
+                <ul>
+                    <li class="active"><a href="images/.._uploads_lecture-plans_btech_7sem_lp7sem.pdf" target="_blank">Lecture Plans</a></li>
+                    <li><a href="http://www.ipu.ac.in/" target="_blank">Academic Calender</a></li>
+                    <li><a href="attendance.aspx">Attendence</a></li>
+                    <li><a href="images/.._uploads_papers_odd_cse7sem.pdf" target="_blank">Previous Year Papaers</a></li>
+                    <li><a href="tutorial.aspx">Tutorials</a></li>
+                    
+                </ul>
+            </div>
+            <!-- ###### -->
+        </div>
+    </div>
+    <asp:ContentPlaceHolder ID="bodyContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>

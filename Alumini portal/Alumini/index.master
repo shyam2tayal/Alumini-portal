@@ -1,0 +1,155 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="index.master.cs" Inherits="index" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <meta http-equiv="imagetoolbar" content="no" />
+    <link rel="stylesheet" href="../styles/layout.css" type="text/css" />
+    <!-- Homepage Specific Elements -->
+    <script type="text/javascript" src="../scripts/jquery-1.4.1.min.js"></script>
+    <script type="text/javascript" src="../scripts/jquery-ui-1.7.2.custom.min.js"></script>
+    <script type="text/javascript" src="../scripts/jquery.tabs.setup.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" runat="server">
+    </asp:ToolkitScriptManager>
+    <div class="wrapper row1">
+        <div id="header" class="clear">
+            <div class="fl_left">
+                <h1>
+                    <a href="#">Alumini Portal</a></h1>
+                
+            </div>
+            <div class="fl_right">
+            </div>
+        </div>
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="wrapper row2">
+        <div class="rnd">
+            <!-- ###### -->
+            <div id="topnav">
+                <ul>
+                    
+                    <li><a href="Update.aspx">Update Profile</a></li>
+                    <li class="last"><a href="../login.aspx">Signout</a></li>
+                </ul>
+            </div>
+            <!-- ###### -->
+        </div>
+    </div>
+    <!-- ####################################################################################################### -->
+    <div class="wrapper">
+        <div id="featured_slide" class="clear">
+            <!-- ###### -->
+            <div class="overlay_left">
+            </div>
+            <div id="featured_content">
+                <div class="featured_box" id="fc1">
+                    <img src="../images/demo/slider/1.gif" alt="" />
+                    <div class="floater">
+                        <h2>
+                            Nullamlacus dui ipsum</h2>
+                        <p>
+                            Attincidunt vel nam a maurisus lacinia consectetus magnisl sed ac morbi. Inmaurisus
+                            habitur pretium eu et ac vest penatibus id lacus parturpis.</p>
+                        <p class="readmore">
+                            <a href="#">Continue Reading &raquo;</a></p>
+                    </div>
+                </div>
+                <div class="featured_box" id="fc2">
+                    <img src="../images/demo/slider/2.gif" alt="" />
+                    <div class="floater">
+                        <h2>
+                            Aliquatjusto quisque nam</h2>
+                        <p>
+                            Attincidunt vel nam a maurisus lacinia consectetus magnisl sed ac morbi. Inmaurisus
+                            habitur pretium eu et ac vest penatibus id lacus parturpis.</p>
+                        <p class="readmore">
+                            <a href="#">Continue Reading &raquo;</a></p>
+                    </div>
+                </div>
+                <div class="featured_box" id="fc3">
+                    <img src="../images/demo/slider/3.gif" alt="" />
+                    <div class="floater">
+                        <h2>
+                            Aliquatjusto quisque nam</h2>
+                        <p>
+                            Attincidunt vel nam a maurisus lacinia consectetus magnisl sed ac morbi. Inmaurisus
+                            habitur pretium eu et ac vest penatibus id lacus parturpis.</p>
+                        <p class="readmore">
+                            <a href="#">Continue Reading &raquo;</a></p>
+                    </div>
+                </div>
+                <div class="featured_box" id="fc4">
+                    <img src="../images/demo/slider/4.gif" alt="" />
+                    <div class="floater">
+                        <h2>
+                            Aliquatjusto quisque nam</h2>
+                        <p>
+                            Attincidunt vel nam a maurisus lacinia consectetus magnisl sed ac morbi. Inmaurisus
+                            habitur pretium eu et ac vest penatibus id lacus parturpis.</p>
+                        <p class="readmore">
+                            <a href="#">Continue Reading &raquo;</a></p>
+                    </div>
+                </div>
+                <div class="featured_box" id="fc5">
+                    <img src="../images/demo/slider/5.gif" alt="" />
+                    <div class="floater">
+                        <h2>
+                            Dapiensociis temper donec</h2>
+                        <p>
+                            Attincidunt vel nam a maurisus lacinia consectetus magnisl sed ac morbi. Inmaurisus
+                            habitur pretium eu et ac vest penatibus id lacus parturpis.</p>
+                        <p class="readmore">
+                            <a href="#">Continue Reading &raquo;</a></p>
+                    </div>
+                </div>
+            </div>
+            <ul id="featured_tabs">
+                <li><a href="#fc1">All About The University</a></li>
+                <li><a href="#fc2">Why You Should Study With Us</a></li>
+                <li><a href="#fc3">Education And Student Experience</a></li>
+                <li><a href="#fc4">Alumni And Its Donors</a></li>
+                <li class="last"><a href="#fc5">Latest University News &amp; Events</a></li>
+            </ul>
+            <div class="overlay_right">
+            </div>
+            <!-- ###### -->
+        </div>
+    </div>
+    <div class="wrapper row3">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="wrapper row4">
+        <div class="rnd">
+            <div id="footer" class="clear">
+                <!-- ####################################################################################################### -->
+                <div class="fl_left clear">
+                    <div class="fl_left center">
+                        <img src="images/demo/worldmap.gif" alt="" /><br />
+                        <a href="#">Find Us With Google Maps &raquo;</a></div>
+                    <address>
+                        Address Line 1<br />
+                        Address Line 2<br />
+                        Town/City<br />
+                        Postcode/Zip<br />
+                        <br />
+                        Tel: xxxx xxxx xxxxxx<br />
+                        Email: <a href="#">contact@domain.com</a>
+                    </address>
+                </div>
+                <!-- ####################################################################################################### -->
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
